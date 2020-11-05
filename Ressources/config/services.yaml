@@ -1,0 +1,7 @@
+services:
+
+  DctT\TracabilityBundle\EventListener\TracabilitySubscriber:
+      tags:
+        - { name: doctrine.event_subscriber, connection: default }
+        
+      arguments: ['@security.token_storage', '@service_container']
