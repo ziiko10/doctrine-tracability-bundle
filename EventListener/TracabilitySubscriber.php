@@ -82,7 +82,7 @@ class TracabilitySubscriber implements EventSubscriber
                 ->setUser($user)
                 ->setAction($action)
                 ->setCreatedAt(new DateTime())
-                ->setResource($isTraceable->ressourceName .'-'. $ressourceIdentifier);
+                ->setResource($isTraceable->resourceName .'-'. $ressourceIdentifier);
 
             $em->persist($traceability);
             $em->flush();
