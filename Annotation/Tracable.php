@@ -15,5 +15,5 @@ class Tracable {
     /**
      * @var string
      */
-    public $ressourceName;
+    public $resourceName;
 }
